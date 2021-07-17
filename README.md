@@ -85,6 +85,8 @@ PathVariable로 넘어온 상품 ID를 이용하여 수정한 객체를 itemRepo
 #### @RequestMapping("/{itemId}/delete")
 PathVaribale로 넘어온 상품 ID를 이용하여 itemRepository 통해 delete    
 삭제 후 상품 전체 화면으로 redirect
-
-###
-
+#
+### PRG - Post/Redirect/Get
+상품 등록 후 새로고침하면 마지막에 서버로 전송한 데이터를 다시 전송함    
+상품 저장 후 뷰 템플릿으로 이동하는 것이 아니라, 상품 상세 화면으로 redirect 해야 함   
+이런 문제 해결 방식을 PRG Post/Redirect/Get 이라 함
