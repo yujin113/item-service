@@ -90,3 +90,6 @@ PathVaribale로 넘어온 상품 ID를 이용하여 itemRepository 통해 delete
 상품 등록 후 새로고침하면 마지막에 서버로 전송한 데이터를 다시 전송함    
 상품 저장 후 뷰 템플릿으로 이동하는 것이 아니라, 상품 상세 화면으로 redirect 해야 함   
 이런 문제 해결 방식을 PRG Post/Redirect/Get 이라 함
+#
+### RedirectAttributes
+URL 인코딩도 해주고, pathVariable, 쿼리 파라미터까지 처리해줌
