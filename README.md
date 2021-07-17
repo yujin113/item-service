@@ -3,8 +3,8 @@
 ### 상품 도메인 개발
 1. Item - 상품 객체
 2. ItemRepository - 상품 저장소
-3. ItemRepositoryTest - 상품 저장소 테스트
-
+3. ItemRepositoryTest - 상품 저장소 테스트  
+#
 ### 상품 목록 - 타임리프 이용
 타임리프는 순수 HTML을 그대로 유지하면서 뷰 템플릿도 사용할 수 있는 네츄럴 템플릿의 특징을 가지고 있다
 1. 속성 변경 - th:href, th: onclick   
@@ -45,6 +45,7 @@
    내용의 값을 th:text의 값으로 변경
    10000을 ${item.price} 값으로 변경하게 됨
    
+#
 ### 상품 상세
 #### @GetMapping("/{itemId}")
 PathVariable로 넘어온 상품 ID로 상품 조회 후 모델에 담고, 뷰 템플릿 호출
@@ -84,4 +85,6 @@ PathVariable로 넘어온 상품 ID를 이용하여 수정한 객체를 itemRepo
 #### @RequestMapping("/{itemId}/delete")
 PathVaribale로 넘어온 상품 ID를 이용하여 itemRepository 통해 delete    
 삭제 후 상품 전체 화면으로 redirect
+
+###
 
